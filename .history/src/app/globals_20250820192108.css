@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* breakpoint */
+  --breakpoint-Xxl: 1440px; /*1440 px*/
+  --breakpoint-2xl: 1536px;
+  --breakpoint-xsm: 500px;
+
+  /* color */
+  --color-primary: #64748B;
+  --color-secondary: #1F2A2E;
+  --color-lightgray: #F4F8FA;
+  --color-overlay: #000A0B99;
+  --color-darkblack: #273338;
+  --color-twilliteblack: #181f22;
+  --color-gray: #365564;
+
+  /* padding */
+  --spacing-35: 35rem; /*550px*/
+
+  /* text */
+  --text-28: 28px;
+  --text-56: 56px;
+
+  /* height */
+  --height-80vh: 80vh;
+  --height-70vh: 70vh;
+  --height-50vh: 50vh;
+  --height-450px: 450px;
+  --height-650px: 650px;
+  --height-750px: 750px;
+  --height-700px: 700px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-[105rem] my-0 mx-auto py-0 sm:px-7 px-5;
+  }
+
+  .large-heading {
+    @apply text-6xl md:text-9xl 2xl:text-[290px] leading-none;
+  }
+
+  .blog-heading{
+    @apply text-4xl md:text-5xl xl:text-7xl;
+  }
+
+  .section-bedge {
+    @apply text-base font-medium text-white bg-secondary dark:bg-white/10;
+  }
+
+  .project-descp p{
+    @apply text-secondary/70 dark:text-white/70 pt-2;
+  }
+
+  .project-descp h4{
+    @apply  pt-5;
+  }
+
+  .project-descp h5{
+    @apply  pt-4;
+  }
+
+  .blog-content p{
+    @apply text-secondary/70 dark:text-white/70;
+  }
+
+  .blog-content h4{
+    @apply mt-5 mb-3.5;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+  }
+
+  .swiper-slide {
+    width: fit-content !important;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-9xl font-bold text-white;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl Xxl:text-[56px] font-bold leading-tight text-secondary dark:text-white;
+  }
+
+  h3 {
+    @apply text-28 Xxl:text-4xl font-bold text-secondary dark:text-white;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-28 font-bold text-secondary dark:text-white;
+  }
+
+  h5 {
+    @apply text-black dark:text-white;
+  }
+
+  h6 {
+    @apply text-black dark:text-white;
+  }
+
+  p {
+    @apply text-lg font-normal leading-normal text-black dark:text-white;
+  }
+}
