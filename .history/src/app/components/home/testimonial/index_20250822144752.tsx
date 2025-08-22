@@ -52,7 +52,7 @@ const Testimonialss = () => {
               <UserInfo>
                 <Name>
                   <MaskText phrases={[t.person]} tag="h3" />
-                  <MaskText phrases={['Happy Catholic']} tag="p" />
+                  <MaskText phrases={['Happy Catholi']} tag="p" />
                 </Name>
                 <Avatar>
                   <Image src={t.avatar} alt="user avatar" width={50} height={50} />
