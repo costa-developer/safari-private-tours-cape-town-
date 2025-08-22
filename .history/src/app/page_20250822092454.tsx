@@ -1,0 +1,27 @@
+import { Metadata } from "next";
+import Contact from "./components/home/contact";
+import Faq from "./components/home/faq";
+import HeroSection from "./components/home/hero";
+import Resources from "./components/home/resources";
+import CalenderEvents from "./components/home/events";
+import StatsFacts from "./components/home/stats-facts";
+import Testimonialss from "./components/home/testimonial";
+import MinistriesGuides from "./components/home/ministries";
+import Camp from "./components/home/ministries";
+
+export const metadata: Metadata = {
+    title: "Digitalizeiq",
+};
+
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+      <CalenderEvents />
+      <StatsFacts/>
+     <Camp />
+      <Faq/>
+      <Testimonialss />
+    </>
+  );
+}
