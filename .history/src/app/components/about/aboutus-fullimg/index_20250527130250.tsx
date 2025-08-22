@@ -22,7 +22,7 @@ const AboutusFullimg = () => {
         <section>
             <div className="w-full h-50vh lg:h-80vh">
                 <Image
-                    src={"/images/about-us/image-section/full-w-image.jpg"}
+                    src={"/images/about-us/image-section/full-w-image.png"}
                     alt="Image"
                     width={1800}
                     height={800}

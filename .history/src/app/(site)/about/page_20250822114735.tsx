@@ -13,9 +13,9 @@ export default function Page() {
     return (
         <main>
             <Herobanner
-                bannerimage="/images/about-us/banner/aboutus-banner.jpg"
+                bannerimage="/images/about-us/banner/aboutus-banner.png"
                 heading="About us"
-                desc="We are a community of Zimbabwean Catholics in Cape Town, striving to live faithfully in Christ and share His love through our words and actions." />
+                desc="We craft <span>innovative digital</span> designs that amplify brand identity and drive meaningful results" />
             <AboutusDetail />
             <AboutusStats/>
             <AboutusFullimg/>

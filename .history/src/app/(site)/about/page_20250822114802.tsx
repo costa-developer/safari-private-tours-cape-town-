@@ -13,7 +13,7 @@ export default function Page() {
     return (
         <main>
             <Herobanner
-                bannerimage="/images/about-us/banner/aboutus-banner.jpg"
+                bannerimage="/images/about-us/banner/aboutus-banner.png"
                 heading="About us"
                 desc="We are a community of Zimbabwean Catholics in Cape Town, striving to live faithfully in Christ and share His love through our words and actions." />
             <AboutusDetail />

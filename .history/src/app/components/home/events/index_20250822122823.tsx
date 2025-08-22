@@ -107,9 +107,9 @@ function CalenderEvents() {
       {/* Top-left Badge */}
       {upcomingEventsData && (
         <div className="absolute top-6 left-6 flex items-center gap-4 md:gap-8">
-          {/* <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full dark:text-secondary">
-            {upcomingEventsData?.number}
-          </span> */}
+          <span className="bg-primary py-1.5 px-2.5 text-base font-medium rounded-full dark:text-secondary">
+            {/* {upcomingEventsData?.number} */}
+          </span>
         </div>
       )}
 

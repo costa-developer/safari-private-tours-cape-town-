@@ -55,42 +55,43 @@ const teamData = {
   number: '05',
   data: [
     {
-      image: "/images/home/team/tendai.jpg",
+      image: "/images/home/team/team-img-1.png",
       name: "Father Tendai",
       position: "Parish Priest",
       socialLinks: [
-        { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
+        { icon: "/images/socialIcon/facebook.svg", link: "https://facebook.com" },
+        { icon: "/images/socialIcon/twitter.svg", link: "https://twitter.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
+      image: "/images/home/team/team-img-2.png",
       name: "Sister Tendai",
       position: "Youth Coordinator",
       socialLinks: [
-        { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
+        { icon: "/images/socialIcon/facebook.svg", link: "https://facebook.com" },
+        { icon: "/images/socialIcon/instagram.svg", link: "https://instagram.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
+      image: "/images/home/team/team-img-3.png",
       name: "Mr. Tendai",
       position: "Choir Director",
       socialLinks: [
-        { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
+        { icon: "/images/socialIcon/facebook.svg", link: "https://facebook.com" },
+        { icon: "/images/socialIcon/youtube.svg", link: "https://youtube.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
+      image: "/images/home/team/team-img-4.png",
       name: "Mrs. Tendai",
       position: "Community Outreach Leader",
       socialLinks: [
-        { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
+        { icon: "/images/socialIcon/facebook.svg", link: "https://facebook.com" },
+        { icon: "/images/socialIcon/instagram.svg", link: "https://instagram.com" },
       ],
     },
   ],
 };
-
-
-
 
 
 const pricingData = {

@@ -55,43 +55,47 @@ const teamData = {
   number: '05',
   data: [
     {
-      image: "/images/home/team/tendai.jpg",
-      name: "Father Tendai",
-      position: "Parish Priest",
+      image: "/images/home/team/team-img-1.png",
+      name: "Hillary",
+      position: "Creative Director",
       socialLinks: [
+        { icon: "/images/socialIcon/twitter.svg", link: "https://twitter.com" },
+        { icon: "/images/socialIcon/Be.svg", link: "https://www.behance.net/" },
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
-      name: "Sister Tendai",
-      position: "Youth Coordinator",
+      image: "/images/home/team/team-img-2.png",
+      name: "Hillary",
+      position: "Marketing Strategist",
       socialLinks: [
+        { icon: "/images/socialIcon/twitter.svg", link: "https://twitter.com" },
+        { icon: "/images/socialIcon/Be.svg", link: "https://www.behance.net/" },
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
-      name: "Mr. Tendai",
-      position: "Choir Director",
+      image: "/images/home/team/team-img-3.png",
+      name: "Hillary",
+      position: "Lead Designer",
       socialLinks: [
+        { icon: "/images/socialIcon/twitter.svg", link: "https://twitter.com" },
+        { icon: "/images/socialIcon/Be.svg", link: "https://www.behance.net/" },
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
-      image: "/images/home/team/tendai.jpg",
-      name: "Mrs. Tendai",
-      position: "Community Outreach Leader",
+      image: "/images/home/team/team-img-4.png",
+      name: "Hillary",
+      position: "UX/UI Developer",
       socialLinks: [
+        { icon: "/images/socialIcon/twitter.svg", link: "https://twitter.com" },
+        { icon: "/images/socialIcon/Be.svg", link: "https://www.behance.net/" },
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
   ],
 };
-
-
-
-
 
 const pricingData = {
   data: [
@@ -204,15 +208,14 @@ const aboutusStats = [
 
 
 const servicesSliderData = [
-  "Sunday Mass & Worship",
-  "Bible Study & Catechism",
-  "Youth & Children Programs",
-  "Prayer & Fellowship Meetings",
-  "Community Outreach Projects",
-  "Cultural & Heritage Events",
-  "Spiritual Counseling & Support",
+  "Custom Websites",
+  "SEO & SEM",
+  "Social Media Marketing",
+  "Cyber Security Awareness",
+  "Web Applications",
+  "Content Strategy",
+  "Team Cyber Training",
 ];
-
 
 
 export const GET = async () => {
