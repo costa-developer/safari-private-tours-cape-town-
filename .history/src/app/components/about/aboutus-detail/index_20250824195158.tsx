@@ -11,7 +11,10 @@ const AboutusDetail = () => {
                         As a community of Catholic immigrants from Zimbabwe within the Archdiocese of Cape Town, we strive to be faithful disciples of Christ. We seek to live out our faith through our words and actions, sharing the Gospel with others and witnessing to the love of God.
                         </p>
                         <p className='text-secondary dark:text-white'>
-                        We embrace unity with the local Church and society, while cherishing our Zimbabwean heritage and its unique contributions. We support and encourage one another in our faith journeys, fostering a welcoming and inclusive community that reflects the love and mercy of Christ. Through prayer and shared experiences, we strive to strengthen our faith and contribute to the vibrant Christian life within the Archdiocese.
+                            While we embrace our Zimbabwean heritage, we also cherish our unity with the local Church and society. 
+                            Through fellowship, spiritual growth programs, and community events, we support one another in our faith 
+                            journeys, fostering a welcoming and inclusive environment. Our mission is to strengthen our collective faith, 
+                            celebrate our culture, and contribute meaningfully to the Catholic life of the Archdiocese of Cape Town.
                         </p>
                     </div>
                 </div>
