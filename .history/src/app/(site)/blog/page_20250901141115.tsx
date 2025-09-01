@@ -10,7 +10,7 @@ export default function Page() {
     return (
         <main>
             <Herobanner
-                bannerimage="/images/blog/banner/blog_banner.jpg"
+                bannerimage="/images/blog/banner/blog_banner.jpg.jpg"
                 heading="Travel Blog"
                 desc="Stay inspired and informed with our <span>latest insights, tips, and stories</span> from unforgettable Cape Town tours and experiences." 
             />    

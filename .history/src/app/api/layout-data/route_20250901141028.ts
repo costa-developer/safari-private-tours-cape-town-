@@ -27,12 +27,18 @@ const MenuData = [
   },
   {
     id: 5,
+    title: "Travel Stories",
+    path: "/#stories",
+    newTab: false,
+  },
+  {
+    id: 6,
     title: "Blog",
     path: "/blog",
     newTab: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "Contact",
     path: "/contact",
     newTab: false,

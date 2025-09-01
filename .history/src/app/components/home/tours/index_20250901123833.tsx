@@ -25,7 +25,7 @@ function AllToursData() {
 
   return (
     <section className="relative bg-secondary py-20 md:py-40">
-      <div className="container max-w-lg">
+      <div className="container max-w-3xl">
         <h2 className="text-3xl md:text-4xl text-white mb-4">
           {ToursData?.heading}
         </h2>

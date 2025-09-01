@@ -136,10 +136,14 @@ export const Card = ({ card }: { card: Card }) => {
         fill
         className="absolute inset-0 object-cover"
       />
+
+      {/* Top Gradient for Title & Category */}
       <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/70 to-transparent" />
       
+      {/* Bottom Gradient for Price & Period */}
       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
 
+      {/* Category & Title at the top */}
       <div className="relative z-10 p-6">
         <p className="text-left font-sans text-sm font-semibold text-white md:text-base tracking-wide">
           {card.category.toUpperCase()}
@@ -149,6 +153,7 @@ export const Card = ({ card }: { card: Card }) => {
         </p>
       </div>
 
+      {/* Bottom full-width price & period */}
       <div className="absolute bottom-0 left-0 w-full z-10 bg-gradient-to-t from-[#8a725e]/90 to-transparent px-6 py-3 flex justify-between items-center rounded-b-3xl backdrop-blur-sm">
         <p className="text-white text-xl font-extrabold md:text-2xl drop-shadow-lg">
           {card.price}

@@ -26,13 +26,13 @@ const MenuData = [
     newTab: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Blog",
     path: "/blog",
     newTab: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "Contact",
     path: "/contact",
     newTab: false,

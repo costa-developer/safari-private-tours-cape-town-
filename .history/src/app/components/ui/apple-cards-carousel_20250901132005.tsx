@@ -122,13 +122,10 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
+// Card component with all final improvements
 export const Card = ({ card }: { card: Card }) => {
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="relative flex h-80 w-56 flex-col justify-between overflow-hidden rounded-3xl bg-gray-100 shadow-xl hover:shadow-2xl md:h-[40rem] md:w-96 dark:bg-neutral-900"
-    >
+    <div className="relative flex h-80 w-56 flex-col justify-between overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900">
       {/* Card image */}
       <BlurImage
         src={card.src}
@@ -136,29 +133,28 @@ export const Card = ({ card }: { card: Card }) => {
         fill
         className="absolute inset-0 object-cover"
       />
-      <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/70 to-transparent" />
+      {/* Top Gradient for Title & Category */}
+      <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/80 to-transparent" />
       
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 to-transparent" />
-
+      {/* Bottom Gradient for Price & Period */}
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
+      {/* Category & Title at the top */}
       <div className="relative z-10 p-6">
-        <p className="text-left font-sans text-sm font-semibold text-white md:text-base tracking-wide">
-          {card.category.toUpperCase()}
-        </p>
-        <p className="mt-2 max-w-xs text-left font-sans text-xl font-bold leading-snug text-white md:text-3xl">
+        <p className="text-left font-sans text-sm font-medium text-white md:text-base">{card.category}</p>
+        <p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
           {card.title}
         </p>
       </div>
-
-      <div className="absolute bottom-0 left-0 w-full z-10 bg-gradient-to-t from-[#8a725e]/90 to-transparent px-6 py-3 flex justify-between items-center rounded-b-3xl backdrop-blur-sm">
-        <p className="text-white text-xl font-extrabold md:text-2xl drop-shadow-lg">
+      {/* Bottom full-width price & period */}
+      <div className="absolute bottom-0 left-0 w-full z-10 bg-[#8a725e] px-6 py-3 flex justify-between items-center rounded-b-3xl">
+        <p className="text-white text-xl font-bold md:text-2xl">
           {card.price}
         </p>
-        <p className="text-white text-sm font-light md:text-base">{card.period}</p>
+        <p className="text-white text-sm font-light">{card.period}</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
-
 
 
 

@@ -25,7 +25,7 @@ function AllToursData() {
 
   return (
     <section className="relative bg-secondary py-20 md:py-40">
-      <div className="container max-w-lg">
+      <div className="px-4 md:px-0" style={{ maxWidth: '768px' }}>
         <h2 className="text-3xl md:text-4xl text-white mb-4">
           {ToursData?.heading}
         </h2>
@@ -33,8 +33,10 @@ function AllToursData() {
           {ToursData?.description}
         </p>
       </div>
+
       <Carousel items={cards} />
     </section>
+
   );
 }
 

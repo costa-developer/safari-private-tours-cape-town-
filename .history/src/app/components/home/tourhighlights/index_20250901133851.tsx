@@ -11,7 +11,7 @@ interface ExperienceProps {
 const ExperienceCard = ({ backgroundImage, title, subtitle, participants }: ExperienceProps) => {
   return (
     <div
-      className="h-full w-full min-w-[1100px] bg-cover bg-no-repeat"
+      className="h-full w-full min-w-[1100px] bg-cover bg-no-repeat lg:rounded-r-3xl 2xl:rounded-3xl"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
@@ -49,16 +49,11 @@ const ExperienceCard = ({ backgroundImage, title, subtitle, participants }: Expe
 
 const Experiences = () => {
   return (
-    <section className="2xl:max-w-[1920px] bg-secondary relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+    <section className="2xl:max-w-[1920px] bg-[#6B7460] relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       
-      <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left px-6 lg:px-20 mb-10">
-        <h2 className="max-w-3xl text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-          Experience <span className="text-[#B6A28F]">Real, Raw Nature</span>
-        </h2>
-        <p className="max-w-2xl text-white/90 text-base md:text-lg lg:text-xl leading-relaxed">
-          Traveling is more than the places you visit—it's about people, culture, wildlife, and history. With Wilderness, you'll trek, boat, float, fly, drive, ride, and discover a world of adventures. Every journey is designed to immerse you in nature's beauty and create unforgettable memories.
-        </p>
-      </div>
+      <h3 className="mb-4 block lg:hidden 2xl:max-w-3xl text-secondary dark:text-white font-semibold text-center">
+        Swipe to discover Cape Town adventures
+      </h3>
 
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <ExperienceCard

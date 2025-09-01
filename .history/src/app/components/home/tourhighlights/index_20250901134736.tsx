@@ -51,14 +51,13 @@ const Experiences = () => {
   return (
     <section className="2xl:max-w-[1920px] bg-secondary relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
       
-      <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left px-6 lg:px-20 mb-10">
-        <h2 className="max-w-3xl text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
-          Experience <span className="text-[#B6A28F]">Real, Raw Nature</span>
-        </h2>
-        <p className="max-w-2xl text-white/90 text-base md:text-lg lg:text-xl leading-relaxed">
-          Traveling is more than the places you visit—it's about people, culture, wildlife, and history. With Wilderness, you'll trek, boat, float, fly, drive, ride, and discover a world of adventures. Every journey is designed to immerse you in nature's beauty and create unforgettable memories.
+      <div className="flex-1 flex flex-col gap-5 items-center md:items-start justify-center">
+                            <h2 className="max-w-3xl">Experience real, raw nature</h2>
+                            <p className="max-w-xl text-secondary/70 dark:text-white/70">
+          Travelling is about more than the places you visit and the things you’ll see. It’s about people, culture, wildlife, history, and experiencing something you’ve never done before. With Wilderness you’ll walk, boat, barge, float, fly, drive, ride, trek, track and discover a world of adventures. 
+
         </p>
-      </div>
+                        </div>
 
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <ExperienceCard

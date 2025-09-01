@@ -6,7 +6,6 @@ import Testimonialss from "./components/home/testimonial";
 import CustomeJourneys from "./components/home/customjourneys";
 import Experiences from "./components/home/tourhighlights";
 import AllToursData from "./components/home/tours";
-import AboutusFullimg from "./components/about/aboutus-fullimg";
 
 export const metadata: Metadata = {
     title: "Digitalizeiq",
@@ -16,10 +15,10 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AllToursData />
       <StatsFacts/>
-      {/* <CustomeJourneys /> */}
-      <AboutusFullimg />
+      <AllToursData />
+      <Faq/>
+      <CustomeJourneys />
      <Experiences />
       <Faq/>
       <Testimonialss />

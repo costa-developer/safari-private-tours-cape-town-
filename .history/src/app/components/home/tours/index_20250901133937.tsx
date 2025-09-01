@@ -24,7 +24,7 @@ function AllToursData() {
   }, []);
 
   return (
-    <section className="relative bg-secondary py-20 md:py-40">
+    <section className="relative bg-[#6B7460] py-20 md:py-40">
       <div className="container max-w-lg">
         <h2 className="text-3xl md:text-4xl text-white mb-4">
           {ToursData?.heading}
