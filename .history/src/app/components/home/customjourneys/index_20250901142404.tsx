@@ -1,7 +1,7 @@
 "use client";
 
 import { FaArrowRight } from "react-icons/fa";
-import { motion, useAnimation, useInView, Variants, Transition } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
 
 const CustomeJourneys = () => {
@@ -15,16 +15,9 @@ const CustomeJourneys = () => {
     }
   }, [controls, inView]);
 
-  // Transition with proper TypeScript typing
-  const fadeUpTransition: Transition = {
-    duration: 0.8,
-    ease: [0.33, 1, 0.68, 1], // cubic-bezier equivalent of easeOut
-  };
-
-  // Variants for fade-up animation
-  const fadeUp: Variants = {
+  const fadeUp = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: fadeUpTransition },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
 
   return (
@@ -49,7 +42,6 @@ const CustomeJourneys = () => {
           variants={fadeUp}
           initial="hidden"
           animate={controls}
-          transition={{ delay: 0 }}
           className="text-sm sm:text-base lg:text-[14px] font-medium text-white mb-4 uppercase tracking-widest"
         >
           Our custom-designed journeys
