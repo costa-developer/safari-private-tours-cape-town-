@@ -6,6 +6,7 @@ export const useOutsideClick = (
 ) => {
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
+      // if ref is not set OR the click happened inside ref, do nothing
       if (!ref.current || ref.current.contains(event.target as Node)) {
         return;
       }
