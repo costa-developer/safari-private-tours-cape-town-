@@ -22,10 +22,9 @@ const statsFactData = {
 
 const ToursData = { 
   number: '01',
-  heading: "Discover Cape Town's Iconic Destinations",
-  description: "Embark on our expertly guided tours and explore Cape Town’s most iconic sights—from the breathtaking heights of Table Mountain and historic Robben Island to world-class wine estates, bustling local markets, and pristine beaches. Experience the Mother City in a way you’ll never forget.",
+  heading: "Our Iconic Destinations",
+  description: "Join our guided tours and explore Cape Town’s top attractions—from Table Mountain and Robben Island to wine estates, vibrant markets, and beautiful beaches. Experience the Mother City like never before.",
 };
-
 
 const testimonialData = {
   data_1: {

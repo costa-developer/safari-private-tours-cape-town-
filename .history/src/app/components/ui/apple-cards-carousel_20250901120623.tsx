@@ -122,44 +122,35 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-// Card component with all final improvements
+// Simplified Card component (no modal)
 export const Card = ({ card }: { card: Card }) => {
   return (
-    <div className="relative flex h-80 w-56 flex-col justify-between overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900">
-      {/* Card image */}
-      <BlurImage
-        src={card.src}
-        alt={card.title}
-        fill
-        className="absolute inset-0 object-cover"
-      />
-
-      {/* Top Gradient for Title & Category */}
-      <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-black/80 to-transparent" />
-      
-      {/* Bottom Gradient for Price & Period */}
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
-
-      {/* Category & Title at the top */}
-      <div className="relative z-10 p-6">
-        <p className="text-left font-sans text-sm font-medium text-white md:text-base">{card.category}</p>
+    <div className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900">
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
+      <div className="relative z-40 p-8">
+        <p className="text-left font-sans text-sm font-medium text-white md:text-base">
+          {card.category}
+        </p>
         <p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl">
           {card.title}
         </p>
       </div>
 
-      {/* Bottom full-width price & period */}
-      <div className="absolute bottom-0 left-0 w-full z-10 bg-[#8a725e] px-6 py-3 flex justify-between items-center rounded-b-3xl">
-        <p className="text-white text-xl font-bold md:text-2xl">
-          {card.price}
-        </p>
-        <p className="text-white text-sm font-light">{card.period}</p>
+      {/* Bottom-left price and period */}
+      <div className="absolute bottom-8 left-8 z-40 flex flex-col items-start gap-1 bg-white">
+        <p className="font-sans text-white text-xl font-semibold">{card.price}</p>
+        <p className="font-sans text-white text-sm font-medium">{card.period}</p>
       </div>
+
+      <BlurImage
+        src={card.src}
+        alt={card.title}
+        fill
+        className="absolute inset-0 z-10 object-cover"
+      />
     </div>
   );
 };
-
-
 
 export const BlurImage = ({
   height,

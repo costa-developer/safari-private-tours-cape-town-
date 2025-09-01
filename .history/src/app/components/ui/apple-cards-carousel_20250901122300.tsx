@@ -122,7 +122,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-// Card component with all final improvements
+// Card component with improved price/period section
 export const Card = ({ card }: { card: Card }) => {
   return (
     <div className="relative flex h-80 w-56 flex-col justify-between overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900">

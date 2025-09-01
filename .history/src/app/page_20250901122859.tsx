@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 import Faq from "./components/home/faq";
 import HeroSection from "./components/home/hero";
+import CalenderEvents from "./components/home/events";
 import StatsFacts from "./components/home/stats-facts";
 import Testimonialss from "./components/home/testimonial";
+import Ministries from "./components/home/tourhighlights";
 import CustomeJourneys from "./components/home/customjourneys";
 import Experiences from "./components/home/tourhighlights";
-import AllToursData from "./components/home/tours";
+import AllToursData from "./components/home/events";
 
 export const metadata: Metadata = {
     title: "Digitalizeiq",
