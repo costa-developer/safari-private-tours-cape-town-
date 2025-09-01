@@ -9,22 +9,22 @@ export type Props = {
 export const testimonials: Props[] = [
   {
     testimony:
-      "Being part of the Zimbabwean Catholic community in Cape Town has strengthened my faith and connected me to a wonderful family of believers.",
-    person: 'Maria Chikodzi',
+      "Our Cape Peninsula tour was simply breathtaking! From Cape Point to Boulders Beach penguins, every moment was unforgettable.",
+    person: 'Sarah Johnson',
     avatar: '/images/robert_fox.png',
   },
   {
     testimony:
-      "The community Masses and events bring joy, fellowship, and a sense of home away from Zimbabwe. It's truly uplifting to be part of this vibrant parish.",
-    person: 'Tendai Moyo',
+      "The Winelands tour was the highlight of our trip. The wine tastings, gourmet food, and stunning landscapes were beyond expectations.",
+    person: 'James Smith',
     avatar: '/images/robert_fox.png',
   },
   {
     testimony:
-      "Attending youth gatherings and cultural celebrations has helped my children grow spiritually while staying connected to our Zimbabwean heritage.",
-    person: 'Faith Ndlovu',
+      "Exploring Table Mountain and Robben Island gave us the perfect mix of adventure and history. Highly recommend these tours!",
+    person: 'Olivia Brown',
     avatar: '/images/robert_fox.png',
   },
 ];
 
-export const desktopHeaderPhrase = ['Celebrating', 'Zimbabwean Catholic Community in Cape Town'];
+export const desktopHeaderPhrase = ['Discover', 'Cape Town Tours & Experiences'];

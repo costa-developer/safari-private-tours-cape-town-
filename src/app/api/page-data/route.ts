@@ -9,79 +9,75 @@ const avatarList = [
 
 const statsFactData = {
   number: '02',
-  name: "Stats & Facts",
-  heading: "Connecting Roman Catholics from Zimbabwe in Cape Town",
-  description: "We are a vibrant community of Zimbabwean Catholics living in Cape Town, dedicated to nurturing faith, preserving our cultural heritage, and fostering fellowship. Through Masses, spiritual workshops, cultural events, and outreach programs, we strive to support one another and strengthen our bond as a faith-based community.",
+  name: "Global Recognition",
+  heading: "Cape Town Tourism: A World-Class Success Story",
+  description: "As the reigning 'Best City in the World' (Time Out, 2025), Cape Town is more than a destination—it’s a global icon. With record-breaking visitor numbers and thriving cultural attractions, the Mother City continues to shine as one of the world’s leading travel hubs.",
   scoreData: [
-    { number: 500, numberValue: '+', scoreDescp: "Community members actively participating in church activities" },
-    { number: 20, scoreDescp: "Parishes and community groups serving Zimbabwean Catholics" },
-    { number: 50, numberValue: '+', scoreDescp: "Spiritual workshops, events, and outreach programs held annually" },
-    { number: 15, numberValue: '+', scoreDescp: "Volunteer and charity initiatives supporting local communities" },
+    { number: 4.7, numberValue: 'M+', scoreDescp: "Annual visitors exploring Cape Town’s natural and cultural wonders" },
+    { number: 1, scoreDescp: "Voted the #1 'Best City in the World' by Time Out in 2025" },
+    { number: 948, numberValue: 'K+', scoreDescp: "Tourists visiting Table Mountain each year" },
+    { number: 106, numberValue: 'K+', scoreDescp: "Jobs supported by the local tourism industry" },
   ],
 };
 
-
-
 const UpcomingEventsData = { 
   number: '01',
-  heading: "Our Community Events",
-  description: "We bring Zimbabwean Catholics in Cape Town together through Mass, prayer, cultural celebrations, youth programs, and outreach activities. Join us in worship and fellowship to strengthen our faith and heritage.",
+  heading: "Discover Cape Town",
+  description: "Join our guided tours and explore Cape Town’s top attractions—from Table Mountain and Robben Island to wine estates, vibrant markets, and beautiful beaches. Experience the Mother City like never before.",
 };
-
 
 const testimonialData = {
   data_1: {
-    preTitle: "Hear from our clients",
-    title: "DigitalizeIQ transformed our website into a high-performing, modern platform. They captured our vision perfectly and exceeded expectations.",
+    preTitle: "Traveler Stories",
+    title: "Our Cape Point tour was unforgettable. The guides were knowledgeable and the scenery was breathtaking.",
     author: "Callister",
-    company: "Beatrice Guest House",
+    company: "Visitor from UK",
   },
   data_2: {
-    preTitle: "Hear from our clients",
-    title: "From concept to launch, the team delivered with precision, creativity, and professionalism. Truly an outstanding experience.",
+    preTitle: "Traveler Stories",
+    title: "From the Winelands to Table Mountain, every experience was perfectly organized and full of adventure.",
     author: "Warren",
-    company: "Sky Global Education",
+    company: "Visitor from USA",
   },
   data_3: {
-    preTitle: "Hear from our clients",
-    title: "The entire process was smooth, collaborative, and efficient—resulting in a website that’s both beautiful and effective.",
+    preTitle: "Traveler Stories",
+    title: "Professional, friendly, and seamless tours. We felt safe, engaged, and inspired throughout our trip.",
     author: "Xavier",
     company: "Cape Archives Tours",
   },
 };
-
 
 const teamData = {
   number: '05',
   data: [
     {
       image: "/images/home/team/tendai.jpg",
-      name: "Father Tendai",
-      position: "Parish Priest",
+      name: "Tendai",
+      position: "Lead Tour Guide",
       socialLinks: [
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
       image: "/images/home/team/tendai.jpg",
-      name: "Sister Tendai",
-      position: "Youth Coordinator",
+      name: "Nomsa",
+      position: "Wine Tour Specialist",
       socialLinks: [
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
       image: "/images/home/team/tendai.jpg",
-      name: "Mr. Tendai",
-      position: "Choir Director",
+      name: "David",
+      position: "Adventure Guide",
       socialLinks: [
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
     },
     {
       image: "/images/home/team/tendai.jpg",
-      name: "Mrs. Tendai",
-      position: "Community Outreach Leader",
+      name: "Lerato",
+      position: "Cultural Tour Coordinator",
       socialLinks: [
         { icon: "/images/socialIcon/linkedin.svg", link: "https://linkedin.com" },
       ],
@@ -89,50 +85,44 @@ const teamData = {
   ],
 };
 
-
-
-
-
 const pricingData = {
   data: [
     {
-      planName: "Starter",
-      planPrice: "R8,500",
-      planDescp: "Perfect for small businesses or individuals needing a professional online presence.",
+      planName: "City Explorer",
+      planPrice: "R850",
+      planDescp: "Perfect for first-time visitors wanting to experience Cape Town’s highlights in a single day.",
       planIncludes: [
-        "Custom 5-page responsive website",
-        "Basic SEO setup for visibility",
-        "Social media linking",
-        "Standard contact form integration",
-        "One month of technical support",
+        "Half-day guided city tour",
+        "Visit Table Mountain (ticket excluded)",
+        "Bo-Kaap cultural walk",
+        "Company Gardens & Castle of Good Hope",
+        "Transport included",
       ],
     },
     {
-      planName: "Growth",
+      planName: "Cape Adventure",
       tag: "Most popular",
-      planPrice: "R18,500",
-      cancelPrice: "R22,000",
-      planDescp: "Ideal for growing brands wanting strong digital marketing and online reach.",
+      planPrice: "R1,850",
+      cancelPrice: "R2,200",
+      planDescp: "Ideal for adventurers wanting nature, culture, and iconic landmarks in one package.",
       planIncludes: [
-        "Everything in Starter Plan",
-        "Up to 12-page custom design",
-        "SEO optimisation for all key pages",
-        "Social media marketing campaign (1 month)",
-        "Google Ads setup & tracking",
-        "Two months of technical support",
+        "Full-day Cape Peninsula tour",
+        "Cape Point & Cape of Good Hope",
+        "Boulders Beach penguin colony",
+        "Chapman’s Peak scenic drive",
+        "Transport & bottled water included",
       ],
     },
     {
-      planName: "Enterprise",
-      planPrice: "R32,000",
-      planDescp: "Comprehensive web, marketing, and cyber security solution for established brands.",
+      planName: "Winelands Luxury",
+      planPrice: "R3,200",
+      planDescp: "A premium wine-tasting and gourmet dining experience in Stellenbosch & Franschhoek.",
       planIncludes: [
-        "Everything in Growth Plan",
-        "E-commerce functionality (if required)",
-        "Advanced analytics and reporting",
-        "Cyber Security training for your team",
-        "Branded email template design",
-        "Priority support for six months",
+        "Private driver-guide",
+        "Visits to 3 award-winning estates",
+        "Wine & cheese pairing",
+        "Lunch in Franschhoek",
+        "Luxury transport",
       ],
     },
   ],
@@ -148,72 +138,67 @@ const pricingData = {
 const faqData = {
   data: [
     {
-      faq_que: "When is the Community Mass held?",
-      faq_ans: "Community Mass is held on the first Sunday of every month at 12:00 noon. All Zimbabwean Catholics in Cape Town are welcome to join and participate in prayer and fellowship."
+      faq_que: "What is included in your Cape Peninsula Tour?",
+      faq_ans: "The full-day Cape Peninsula Tour includes visits to Cape Point, the Cape of Good Hope, Boulders Beach penguins, Chapman’s Peak, and more. Transport and guide are included."
     },
     {
-      faq_que: "What is the House Mass?",
-      faq_ans: "House Mass takes place on the third Saturday of each month at 14:00. These smaller gatherings allow for more intimate prayer, reflection, and community bonding."
+      faq_que: "Do you offer private tours?",
+      faq_ans: "Yes, we offer customizable private tours tailored to your group’s interests and schedule."
     },
     {
-      faq_que: "How can I get involved with community ministries?",
-      faq_ans: "We encourage all members to join our ministries and volunteer groups. You can participate in youth outreach, choir, charitable projects, and event organization. Contact us via our website or parish office to get started."
+      faq_que: "Are tickets to attractions included?",
+      faq_ans: "Most entry tickets (such as Table Mountain cable car or Robben Island ferry) are not included, but we assist with bookings."
     },
     {
-      faq_que: "Are there special events throughout the year?",
-      faq_ans: "Yes. We celebrate cultural festivals, religious feasts, youth gatherings, and outreach programs. All events are announced on our calendar, and members can RSVP or add them to their personal calendars."
+      faq_que: "Do your tours include meals?",
+      faq_ans: "Some tours include meals, such as our Winelands packages. For others, we stop at recommended restaurants or provide time to explore local dining."
     },
     {
-      faq_que: "Can I share my own testimony or story?",
-      faq_ans: "Absolutely! We welcome members to share their experiences, success stories, and testimonials. Submissions can include text, photos, or videos from parish activities and community events."
+      faq_que: "How do I book a tour?",
+      faq_ans: "You can book directly on our website, through email, or by calling our office. Payments are secure and confirmations are sent instantly."
     },
   ],
 };
 
-
-
 const contactData = {
-  keypoint: ["Always-On Customer Support", "Service Across the Globe"],
+  keypoint: ["24/7 Customer Support", "Guided Tours Across Cape Town"],
   managerProfile: {
     image: "/images/avatar/avatar_1.jpg",
     name: "Courtney Henry",
-    position: "Onboarding & Success Manager",
+    position: "Tour Operations Manager",
   },
 };
 
 const aboutusStats = [
   {
     number: 2025,
-    postfix: "+",
-    title: "Years of Ministry",
-    descp: "Serving the Zimbabwean Catholic community in Cape Town with faith, fellowship, and spiritual growth.",
+    postfix: "",
+    title: "Cape Town’s Year",
+    descp: "Voted the World’s Best City to Visit in 2025 by Time Out magazine.",
   },
   {
-    number: 500,
-    postfix: "+",
-    title: "Active Members",
-    descp: "A welcoming and diverse congregation of Zimbabwean Catholics participating in worship and community events.",
+    number: 4.7,
+    postfix: "M+",
+    title: "Happy Travelers",
+    descp: "Visitors welcomed annually to Cape Town’s breathtaking landmarks and attractions.",
   },
   {
-    number: 25,
+    number: 300,
     postfix: "+",
-    title: "Community Events",
-    descp: "Organizing regular gatherings, prayer meetings, and cultural celebrations to strengthen our faith and unity.",
+    title: "Unique Experiences",
+    descp: "From wine tours and safaris to city walks and shark diving, Cape Town offers unforgettable adventures.",
   },
 ];
-
 
 const servicesSliderData = [
-  "Sunday Mass & Worship",
-  "Bible Study & Catechism",
-  "Youth & Children Programs",
-  "Prayer & Fellowship Meetings",
-  "Community Outreach Projects",
-  "Cultural & Heritage Events",
-  "Spiritual Counseling & Support",
+  "Table Mountain & City Tours",
+  "Cape Point & Peninsula Tours",
+  "Stellenbosch & Franschhoek Winelands",
+  "Robben Island Heritage Tour",
+  "Adventure Activities (Shark Diving, Paragliding)",
+  "Beaches & Coastal Getaways",
+  "Cultural & Township Experiences",
 ];
-
-
 
 export const GET = async () => {
   return NextResponse.json({
