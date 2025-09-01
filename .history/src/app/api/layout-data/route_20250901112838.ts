@@ -73,7 +73,7 @@ const footerData = {
         { name: "Facebook", href: "https://www.facebook.com/WildernessCapeTownTours" },
         { name: "Youtube", href: "https://www.youtube.com/@WildernessCapeTownTours" },
     ],
-    copyright: "© Safari Private Tours Cape Town Tours 2025"
+    copyright: "© Wilderness Cape Town Tours 2025"
 };
 
 export const GET = async () => {

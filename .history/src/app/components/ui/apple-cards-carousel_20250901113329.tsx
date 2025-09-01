@@ -12,7 +12,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion  } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
 
@@ -20,7 +20,6 @@ interface CarouselProps {
   items: React.ReactNode[];
   initialScroll?: number;
 }
-
 
 type Card = {
   src: string;
@@ -38,9 +37,9 @@ export const CarouselContext = createContext<{
 });
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
-  const carouselRef = React.useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
-  const [canScrollRight, setCanScrollRight] = React.useState(true);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -59,15 +58,11 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   };
 
   const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    }
+    carouselRef.current?.scrollBy({ left: -300, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    }
+    carouselRef.current?.scrollBy({ left: 300, behavior: "smooth" });
   };
 
   const handleCardClose = (index: number) => {
@@ -109,22 +104,22 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               "mx-auto max-w-7xl",
             )}
           >
-          {items.map((item, index) => (
-            <motion.div
-              key={"card" + index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: 0.2 * index,
-                ease: "easeOut",
-              }}
-              className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
-            >
-              {item}
-            </motion.div>
-          ))}
+            {items.map((item, index) => (
+              <motion.div
+                key={"card" + index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.2 * index,
+                  ease: "easeOut",
+                }}
+                className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
+              >
+                {item}
+              </motion.div>
+            ))}
           </div>
         </div>
         <div className="mr-10 flex justify-end gap-2">
@@ -158,8 +153,8 @@ export const Card = ({
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -168,11 +163,7 @@ export const Card = ({
       }
     }
 
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = open ? "hidden" : "auto";
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
@@ -180,9 +171,7 @@ export const Card = ({
 
   useOutsideClick(containerRef, () => handleClose());
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  const handleOpen = () => setOpen(true);
 
   const handleClose = () => {
     setOpen(false);
